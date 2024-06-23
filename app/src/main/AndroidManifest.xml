@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.routineplanningsystem">
+
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoutinePlanningSystem"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".AddProgress"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ProgressTabLayOutView"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AddSchedule"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ProgressListRecommendation"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScheduleTabLayOutView"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".AddTask"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".TaskList"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".BarChartClass"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".BarChartClassTaskView"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>
